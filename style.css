@@ -94,6 +94,11 @@ body{
     background-size: cover;
     float: right;
 }
+.header-half img:hover{
+    transition: .5s ease;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
 /*-------------------------------------- PRODUCTS START --------------------------------------*/
 .products-h1{
     font-size: 2rem;
@@ -117,6 +122,9 @@ body{
     padding: 20px;
     border-radius: 5px;
 }
+.product:hover{
+    box-shadow: 0 0 15px 3px #0000009e;
+}
 .product img{
     width: 100%;
 }
@@ -128,8 +136,9 @@ body{
     font-size: 12px;
     color: rgb(255, 196, 0);
 }
-.product span:last-child{
+.product .star-rating{
     color: #000;
+    font-size: 14px;
 }
 .product p{
     width: 70%;
@@ -155,6 +164,19 @@ body{
 }
 .see-more-btn:hover{
     box-shadow: 0 0 6px -1px #000000ad;
+}
+/* INFLUANCER START */
+.influancer{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.influancer h2{
+    font-size: 2rem;
+}
+.influancer .header-half img{
+    background: url('none');
 }
 /*-------------------------------------- FOOTER START --------------------------------------*/
 #footer{
@@ -206,26 +228,8 @@ body{
     #footer{
         margin-top: 100px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+/* Media Quary For Tab Responsive End */
 /* Media Quary for mobail responsiv Start */
 @media only screen and (max-width: 688px){
     #main{
@@ -272,8 +276,14 @@ body{
     #footer .sosial-media{
         margin-top: 8px;
     }
+    .influancer{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
-
+/* Media Quary for mobail responsiv End */
 
 
 
