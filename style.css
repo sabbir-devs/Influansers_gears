@@ -1,0 +1,185 @@
+/*--------*---------*---------*----------- GOOGLE FONTS --------*---------*---------*-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#header{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-left{
+    padding: 10px;
+    font-weight: 700;
+}
+.menu-right ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.menu-right > ul > img{
+    display: none;
+}
+.menu-right > ul > li{
+    padding: 10px 15px;
+}
+.menu-right > ul > li > a{
+    text-decoration: none;
+    color: #000;
+}
+/*------------------------------------------- HEADER START -------------------------------------------*/
+.header{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.header-half{
+    width: 50%;
+    padding: 10px;
+}
+.header-half h1{
+    font-size: 3rem;
+    font-weight: 700;
+    animation-name: animate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transition: ease;
+}
+@keyframes animate {
+    0% {
+        text-shadow: none;
+    }
+
+    50% {
+        text-shadow: 0 0 8px #000,
+                     0 0 15px #000;
+    }
+
+    100% {
+        text-shadow: none;
+    }
+}
+.header-half p{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    letter-spacing: .5px;
+    width: 80%;
+}
+.header-half .pre-bth{
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 25px;
+    background: #E02C6D;
+    text-decoration: none;
+    font-size: 15px;
+}
+.header-half img{
+    width: 90%;
+    margin-left: 30px;
+    background: url('images/Circle\ design.svg'),no-repeat;
+    background-size: cover;
+    float: right;
+}
+/*-------------------------------------- PRODUCTS START --------------------------------------*/
+.products-h1{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+.products{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3.33%;
+    margin-bottom: 100px;
+}
+.product{
+    width: 100%;
+    height: 500px;
+    background: #fff;
+    box-shadow: 0 0 10px 0px #0000009e;
+    padding: 20px;
+    border-radius: 5px;
+}
+.product img{
+    width: 100%;
+}
+.product h3, .product h4{
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.product span{
+    font-size: 12px;
+    color: rgb(255, 196, 0);
+}
+.product span:last-child{
+    color: #000;
+}
+.product p{
+    width: 70%;
+    color: rgba(0, 0, 0, 0.692);
+    font-size: 14px;
+    letter-spacing: .7;
+    margin-top: 10px;
+}
+.see-more{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+.see-more-btn{
+    color: red;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: right;
+}
+/*-------------------------------------- FOOTER START --------------------------------------*/
+#footer{
+    background: #000;
+    color: #AAAAAA;
+    text-align: center;
+    padding: 40px;
+    margin-top: 80px;
+}
+#footer .sosial-media{
+    display: flex;
+    justify-content: center;
+}
+#footer .sosial-media span{
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    margin: 0 5px;
+    background: rgb(43, 43, 43);
+    border-radius: 50px;
+}
+/*-------------------------------------- FOOTER END --------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
