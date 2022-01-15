@@ -7,6 +7,7 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+    background: rgb(245, 245, 245);
 }
 #main{
     display: flex;
@@ -148,18 +149,33 @@ body{
     font-size: 18px;
     text-decoration: none;
     text-align: right;
+    padding: 10px 20px;
+    background: rgb(204, 204, 204);
+    border-radius: 5px;
+}
+.see-more-btn:hover{
+    box-shadow: 0 0 6px -1px #000000ad;
 }
 /*-------------------------------------- FOOTER START --------------------------------------*/
 #footer{
-    background: #000;
-    color: #AAAAAA;
+    background: #1a1a1a;
+    color: #ffffff;
     text-align: center;
     padding: 40px;
     margin-top: 80px;
 }
+#footer h1{
+    font-size: 2rem;
+}
+#footer p{
+    font-size: 16px;
+    letter-spacing: .5px;
+    line-height: 30px;
+}
 #footer .sosial-media{
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 #footer .sosial-media span{
     font-size: 25px;
@@ -167,12 +183,96 @@ body{
     height: 45px;
     padding: 5px;
     margin: 0 5px;
-    background: rgb(43, 43, 43);
+    background: rgb(0, 1, 70);
     border-radius: 50px;
 }
 /*-------------------------------------- FOOTER END --------------------------------------*/
+/*----------------------------------- MEDIA QUARY START -----------------------------------*/
+/* Media Quary For Tab Responsive Start */
+@media only screen and (min-width:688px) and (max-width:992px){
+
+    .menu-right ul li{
+        display: none;
+    }
+    .menu-right > ul > img{
+        padding: 20px;
+        display: block;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 350px;
+    }
+    #footer{
+        margin-top: 100px;
+    }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/* Media Quary for mobail responsiv Start */
+@media only screen and (max-width: 688px){
+    #main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-right ul li{
+        display: none;
+    }
+    .menu-right > ul > img{
+        padding: 20px;
+        display: block;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .header-half{
+        width: 100%;
+        padding: 10px;
+        display: block;
+    }
+    .products{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 20px;
+    }
+    .product{
+        height: 670px;
+    }
+    #footer{
+        margin-top: 100px;
+    }
+    #footer h1{
+        font-size: 2rem;
+    }
+    #footer p{
+        line-height: 30px;
+    }
+    #footer .sosial-media{
+        margin-top: 8px;
+    }
+}
 
 
 
